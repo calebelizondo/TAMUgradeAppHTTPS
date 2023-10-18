@@ -10,7 +10,7 @@ fi
 
 # avoid replacing these with envsubst
 export host=\$host
-export request_url=\$request_uri
+export request_uri=\$request_uri
 
 echo "Checking for fullchain.pem"
 if [ ! -f "/etc/letsencrypt/live/${DOMAIN}/fullchain.pem"]; then
